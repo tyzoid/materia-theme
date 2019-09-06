@@ -500,13 +500,13 @@ button {
 
   @at-root %button-on-dark {
     &.flat {
-      color: on(dark, secondary);
+      color: on($panel, secondary);
 
-      &:focus, &:hover, &:active, &:checked { color: on(dark); }
+      &:focus, &:hover, &:active, &:checked { color: on($panel); }
 
-      &:disabled { color: on(dark, secondary-disabled); }
+      &:disabled { color: on($panel, secondary-disabled); }
 
-      &:checked:disabled { color: on(dark, disabled); }
+      &:checked:disabled { color: on($panel, disabled); }
     }
   }
 
